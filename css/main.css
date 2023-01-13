@@ -1,0 +1,95 @@
+/* GLOBAL SETTINGS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: white;
+    text-align:center ;
+    max-width: 20rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0rem 0rem 1rem  var(--desaturated-blue);
+}
+
+#banner{
+    border-radius: 10px 10px 0 0 ;
+}
+
+.card-detail{
+    padding: 20px;
+    display: grid;
+    gap: 25px;
+
+}
+
+.card-plan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    height: 80px;
+    border-radius: 5px;
+}
+.card-payment ~ a{
+    color:black;
+    font-weight: 700;
+}
+.card-payment{
+    display: flex;
+    align-items: center;
+}
+.card-payment div{
+    margin: 20px;
+}
+
+.text-desc{
+    color: var(--desaturated-blue);
+}
+.text-head{
+   font-weight: bold;
+}
+.btn{
+    background-color: var(--bright-blue);
+    box-shadow: 0 10px 15px rgb(56 41 224 / 33%);
+    color: white;
+    height:40px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+    font-size: 1rem;
+
+}
+
+.btn ~ a{
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
